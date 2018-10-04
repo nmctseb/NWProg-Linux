@@ -19,6 +19,12 @@
     me@my-box:~ $ wtf
     it's fucking magic
     ```
+    * to see supported languages (by GitHub & many others), see: <https://github.com/github/linguist/blob/master/lib/linguist/languages.yml>
+    ```regex
+    s/^.*([[:digit:]]+\/(tc|ud)p+).*$/$\1$/p
+    /^.*([[:digit:]]+\/(tc|ud)p+).*$/
+   
+    ```
 
 * Use a sensible editor!
   * don't like `vim`, `emacs`? Set up VSCode w/ extensions BASH-IDE + SSH-FS
