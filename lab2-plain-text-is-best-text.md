@@ -57,3 +57,10 @@
 
 - parse/modify/generate confs (dhcpd, bind, apache, nginx, ...)
 - http://augeas.net/download.html
+
+### (g)awk
+
+- start here: <https://learnxinyminutes.com/docs/awk/>
+- then read: <https://likegeeks.com/awk-command/>
+
+Reference manual: <https://www.gnu.org/software/gawk/manual/gawk.html>
