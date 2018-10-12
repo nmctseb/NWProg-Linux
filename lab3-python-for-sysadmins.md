@@ -367,3 +367,5 @@ IPv4Network('192.0.2.0/24')
 
 - Read PuTTY configs --> read & update .vscode settings.json
 - Make script that can be used in a pipe
+- Parse nmap XML output
+- Make a tool that uses `ipaddress` module to generate random exercises
