@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"uri": "sftp://ubuntu-server/",
+			"name": "ubuntu-server (me)"
+		},
+		{
+			"path": "C:\\Users\\me\\Documents\\nwprog-linux"
+		}
+	],
+	"settings": {
+		"sshextension.serverList": [
+			{
+				"name": "ubuntu-server",
+				"host": "192.168.1.10",
+				"port": 22,
+				"username": "me",
+                "password": "mypassword",
+				"privateKey": "C:\\Users\\me\\.ssh\\id_rsa",
+				// "project": {
+				//   "D:/projects/project": "/home/user/project",
+				//   "D:/projects/yet_another_project": "/home/user/yet_another_project"
+				// },
+				"path": "/home/me"
+			}
+		],
+		"remotefs.remote": {
+			"ubuntu-server": {
+				"scheme": "sftp",
+				"host": "192.168.1.10",
+				"port": 22,
+				"username": "me",
+				"password": "mypassword",
+				"privateKeyPath": "C:\\Users\\me\\.ssh\\id_rsa",
+                "passphrase": "mypassphrase",
+				"rootPath": "/home/me"
+			},
+		},
+	}
+}
