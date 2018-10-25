@@ -1,5 +1,7 @@
 # Linux Webserver/reverse proxy: nginx, uwsgi & flask
 
+Live Markdown: <https://hackmd.io/mtFcDrjkR3mBARUjFXSrqw>
+
 ## Preparation
 
 Import your SSH-keys from GitHub:
@@ -82,7 +84,26 @@ root@server:~#
 
 ## Flask
 
+Make a virtualenv:
+
+```console
+root@server:~# cd /srv/www
+root@server:~/srv/www# python3 -m venv flaskenv
+root@server:~/srv/www# source flaskenv/bin/activate
+root@server:~/srv/www# python -m pip install --upgrade pip setuptools wheel
+root@server:~/srv/www# python -m pip install --upgrade Flask passlib argon2_cffi Flask-HTTPAuth
+root@server:~/srv/www# mkdir flask
+
 cat << EOF > /srv/www/flask/web.py
+# see code below!
+EOF
+root@server:~/srv/www# 
+```
+
+web.py
+
+```python
+import logging
 from flask import Flask, g, request, abort, flash, render_template
 
 log = logging.getLogger(__name__)
@@ -97,4 +118,4 @@ if __name__ == '__main__':
     log.info("Flask app starting")
     app.run(host='0.0.0.0', debug=True)
 
-EOF
+```
